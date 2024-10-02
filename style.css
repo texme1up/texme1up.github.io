@@ -1,0 +1,470 @@
+      body {
+        font-family: OpenSans;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(to top, white 70%, #007BFF 30%);
+      }
+
+      .container {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+
+      }
+
+      .phone-input {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+      .nope {
+        width: 70%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        font-size: 21px;
+        letter-spacing: 1px;
+      }
+
+      .otp1 {
+        width: 30%;
+        text-align: center;
+        height: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        border: solid 1px #D9D9D9;
+        outline: none;
+        font-size: 26px;
+        letter-spacing: 1px;
+      }
+
+      .flag-icon {
+        width: 25px;
+        height: 24px;
+        margin: 0 10px;
+      }
+
+      .country-code {
+        margin-right: 5px;
+        font-size: 18px;
+      }
+
+      button {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 92%;
+        height: 40px;
+        padding: 5px;
+        background-color: white;
+        color: white;
+        font-size: 18px;
+        border: none;
+        text-align: center;
+        background: #118EEA;
+        border: 0px solid #1989DF;
+        border-radius: 5px;
+      }
+
+
+      button:disabled {
+        background-color: #00000051;
+      }
+
+      h1 {
+        font-size: 16px;
+        font-weight: 450;
+      }
+
+
+      h3 {
+        font-size: 16px;
+        color: red;
+      }
+
+
+      @keyframes slideUp {
+        from {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .page1 {
+        width: 85%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        z-index: 11;
+      }
+
+      .page2 {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: relative;
+        /* Ensure z-index is effective */
+        z-index: 12;
+        /* Ensure page2 is below page3 */
+      }
+
+      .gbr {
+        margin-top: 5px;
+      }
+
+      .page3 {
+        animation: slideUp 0.5s;
+        background-color: white;
+        width: 100%;
+        height: 50%;
+        top: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        margin: 0;
+        z-index: 993;
+        /* Ensure page3 is above page2 */
+        text-align: center;
+      }
+
+      .page4 {
+        animation: slideUp 0.5s;
+        background-color: white;
+        width: 100%;
+        height: 70%;
+        top: 30%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        margin: 0;
+        z-index: 994;
+        /* Ensure page3 is above page2 */
+        text-align: center;
+        /* Ensure page3 is above page2 */
+      }
+
+      .page4a {
+        animation: slideUp 0.5s;
+        background-color: white;
+        width: 100%;
+        height: 75%;
+        top: 45%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        margin: 0;
+        z-index: 994;
+        /* Ensure page3 is above page2 */
+        text-align: center;
+        /* Ensure page3 is above page2 */
+      }
+
+      .page5 {
+        animation: slideUp 0.5s;
+        background-color: white;
+        width: 100%;
+        height: 60%;
+        top: 40%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        margin: 0;
+        z-index: 9953;
+        /* Ensure page3 is above page2 */
+        text-align: center;
+      }
+
+      .page6 {
+        background-color: white;
+        width: 80%;
+        height: 50%;
+        top: 20%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        position: fixed;
+        left: 25px;
+        padding: 10px;
+        z-index: 9999;
+        /* Ensure page3 is above page2 */
+        text-align: center;
+      }
+
+
+      .pin-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+
+      .pin-box {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font-size: 25px;
+        margin: 0 2px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+
+      .pin-box:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .toggle-button {
+        padding: 5px 15px;
+        border: 1px solid #00BFFF;
+        border-radius: 25px;
+        background-color: #fff;
+        color: #00BFFF;
+        font-size: 12px;
+        cursor: pointer;
+      }
+
+      .otp-input-container {
+        display: flex;
+        justify-content: center;
+        /* Pusatkan elemen */
+        gap: 10px;
+        /* Jarak antar input */
+        margin-bottom: 20px;
+        /* Jarak bawah container */
+      }
+
+      .otp-input-container input[type="number"] {
+        width: 30px;
+        /* Lebar setiap input */
+        height: 30px;
+        /* Tinggi setiap input */
+        font-size: 25px;
+        /* Ukuran font */
+        text-align: center;
+        /* Posisi teks di tengah */
+        border-radius: 10px;
+        /* Radius sudut kotak input */
+        border: 1px solid #ccc;
+        /* Warna border */
+      }
+
+      /**********-----SPINNER----***********/
+      .process {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0000005b;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+      }
+
+      .loading {
+        margin-top: -50px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .loading img {
+        width: 50px;
+      }
+
+      .loading .spinner {
+        position: absolute;
+        width: 35px;
+        animation: spin 1s linear infinite;
+        -webkit-animation: spin 1s linear infinite;
+        -moz-animation: spin 1s linear infinite;
+        -ms-animation: spin 1s linear infinite;
+        -o-animation: spin 1s linear infinite;
+      }
+
+
+      @keyframes spin {
+        0% {
+          transform: rotate(360deg);
+        }
+
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(360deg);
+        }
+
+        100% {
+          -webkit-transform: rotate(0deg);
+        }
+      }
+
+      @-moz-keyframes spin {
+        0% {
+          -webkit-transform: rotate(360deg);
+        }
+
+        100% {
+          -webkit-transform: rotate(0deg);
+        }
+      }
+
+      @-ms-keyframes spin {
+        0% {
+          -webkit-transform: rotate(360deg);
+        }
+
+        100% {
+          -webkit-transform: rotate(0deg);
+        }
+      }
+
+      @-o-keyframes spin {
+        0% {
+          -webkit-transform: rotate(360deg);
+        }
+
+        100% {
+          -webkit-transform: rotate(0deg);
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        .process {
+          position: absolute;
+        }
+      }
+
+
+      /**********-----OTP----***********/
+
+      .peringatanOtp {
+        background: red;
+        z-index: 99999;
+      }
+
+      h2 {
+        font-size: 16px;
+        color: #000000C9;
+      }
+
+      .btntmr {
+        margin-top: 0px;
+        font-size: 16px;
+        color: #00000050;
+        font-size: 14px;
+        cursor: not-allowed;
+      }
+
+      .btntmr.enabled {
+        cursor: pointer;
+        color: #008AFF;
+      }
+
+      /**************************************/
+
+      .kunOtp {
+        top: 0;
+        position: absolute;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background: #000000B8;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+      }
+
+      #timer {
+        font-size: 28px;
+        font-weight: bold;
+        color: #FFFFFFC4;
+      }
+
+      .butt {
+        display: relative;
+        width: 70%;
+        height: 20px;
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+        background: #118EEA;
+        border: 0px solid #1989DF;
+        border-radius: 5px;
+      }
+
+      .kunci {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #000000BF;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        color: #FFFFFF;
+        font-size: 21px;
+        padding: 0;
+      }
+
+      .btn66 {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 92%;
+        height: 40px;
+        padding: 5px;
+        background-color: white;
+        color: white;
+        font-size: 18px;
+        border: none;
+        text-align: center;
+        background: #118EEA;
+        border: 0px solid #1989DF;
+        border-radius: 5px;
+      }
